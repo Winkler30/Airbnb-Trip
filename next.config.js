@@ -1,14 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental:{
+    experimental: {
         appDir: true
     },
-    images:{
-        remotePatterns:[
+    images: {
+        remotePatterns: [
             {
                 protocol: 'https',
                 hostname: 'lh3.googleusercontent.com',
-                port:'',
+                port: '',
+            },
+            {
+                protocol: 'https',
+                hostname: 'images.unsplash.com',
+                port: '',
             },
         ],
     },
